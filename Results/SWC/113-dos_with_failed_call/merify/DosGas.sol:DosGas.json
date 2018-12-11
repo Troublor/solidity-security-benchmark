@@ -1,0 +1,13 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [], 
+  "dos_bug": [
+   "./dos/DosGas.sol:14:9: Warning: dos Vulnerability.\n        for(uint i=0;i<350;i++) {\n        ^\nSpanning multiple lines."
+  ], 
+  "integer_overflow": [], 
+  "integer_underflow": [], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "80.4"
+}

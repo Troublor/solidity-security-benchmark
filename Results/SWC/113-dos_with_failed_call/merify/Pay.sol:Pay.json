@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [], 
+  "dos_bug": [
+   "./dos/Pay.sol:11:9: Warning: dos Vulnerability.\n        while (i < payees.length && msg.gas > 200000) {\n        ^\nSpanning multiple lines."
+  ], 
+  "integer_overflow": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./dos/Pay.sol:12:11: Warning: Transaction-Ordering Dependency.\n          payees[i].addr.send(payees[i].value)"
+   ], 
+   [
+    "./dos/Pay.sol:12:11: Warning: Transaction-Ordering Dependency.\n          payees[i].addr.send(payees[i].value)"
+   ]
+  ]
+ }, 
+ "evm_code_coverage": "98.2"
+}

@@ -1,0 +1,13 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [
+   "./prng/guess_the_random_number.sol:6:9: Warning: prng Vulnerability.\n        answer = uint8(keccak256(block.blockhash(block.number - 1), now))"
+  ], 
+  "dos_bug": [], 
+  "integer_overflow": [], 
+  "integer_underflow": [], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "99.6"
+}

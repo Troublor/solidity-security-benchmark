@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [
+   "./dos/Auction.sol:8:14: Warning: Re-Entrancy Vulnerability.\n\t    require(msg.sender.call.value(10)()"
+  ], 
+  "prng_bug": [], 
+  "dos_bug": [
+   "./dos/Auction.sol:10:3: Warning: dos Vulnerability.\n\t\trequire(currentLeader.send(highestBid))"
+  ], 
+  "integer_overflow": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./dos/Auction.sol:8:14: Warning: Transaction-Ordering Dependency.\n\t    require(msg.sender.call.value(10)()"
+   ], 
+   [
+    "./dos/Auction.sol:8:14: Warning: Transaction-Ordering Dependency.\n\t    require(msg.sender.call.value(10)()", 
+    "./dos/Auction.sol:10:11: Warning: Transaction-Ordering Dependency.\n\t\trequire(currentLeader.send(highestBid)"
+   ]
+  ]
+ }, 
+ "evm_code_coverage": "99.6"
+}

@@ -1,0 +1,28 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "prng_bug": [], 
+  "integer_overflow": [
+   "./dos/Refunder.sol:14:21: Warning: IntegerOverflow Vulnerability.\n            require(refundAddresses[x]", 
+   "./dos/Refunder.sol:4:1: Warning: IntegerOverflow Vulnerability.\nmapping (address => uint) public refunds"
+  ], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./dos/Refunder.sol:14:21: Warning: Transaction-Ordering Dependency.\n            require(refundAddresses[x].send(refunds[refundAddresses[x]])"
+   ], 
+   [
+    "./dos/Refunder.sol:14:21: Warning: Transaction-Ordering Dependency.\n            require(refundAddresses[x].send(refunds[refundAddresses[x]])"
+   ]
+  ], 
+  "assertion_failure": [], 
+  "dos_bug": [
+   "./dos/Refunder.sol:14:13: Warning: dos Vulnerability.\n            require(refundAddresses[x].send(refunds[refundAddresses[x]]))", 
+   "./dos/Refunder.sol:13:9: Warning: dos Vulnerability.\n        for(uint x; x < refundAddresses.length; x++) { // arbitrary length iteration based on how many addresses participated\n        ^\nSpanning multiple lines."
+  ]
+ }, 
+ "evm_code_coverage": "98.8"
+}

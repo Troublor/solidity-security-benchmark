@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [
+   "./prng/Ethraffle_v4b.sol:101:9: Warning: prng Vulnerability.\n        winningAddress.transfer(prize)"
+  ], 
+  "dos_bug": [
+   "./prng/Ethraffle_v4b.sol:76:9: Warning: dos Vulnerability.\n        if (moneySent > 0) {\n        ^\nSpanning multiple lines."
+  ], 
+  "integer_overflow": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./prng/Ethraffle_v4b.sol:77:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(moneySent)"
+   ], 
+   [
+    "./prng/Ethraffle_v4b.sol:101:9: Warning: Transaction-Ordering Dependency.\n        winningAddress.transfer(prize)"
+   ]
+  ]
+ }, 
+ "evm_code_coverage": "99.3"
+}

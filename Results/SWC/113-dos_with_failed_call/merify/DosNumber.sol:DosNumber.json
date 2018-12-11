@@ -1,0 +1,13 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [], 
+  "dos_bug": [
+   "./dos/DosNumber.sol:13:13: Warning: dos Vulnerability.\n            array[numElements++]"
+  ], 
+  "integer_overflow": [], 
+  "integer_underflow": [], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "91.0"
+}

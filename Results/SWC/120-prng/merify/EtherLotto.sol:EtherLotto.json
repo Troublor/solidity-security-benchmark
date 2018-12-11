@@ -1,0 +1,29 @@
+{
+ "vulnerabilities": {
+  "callstack": [], 
+  "time_dependency": [], 
+  "reentrancy": [], 
+  "prng_bug": [
+   "./prng/EtherLotto.sol:43:13: Warning: prng Vulnerability.\n            pot = 0", 
+   "./prng/EtherLotto.sol:37:13: Warning: prng Vulnerability.\n            bank.transfer(FEE_AMOUNT)", 
+   "./prng/EtherLotto.sol:40:13: Warning: prng Vulnerability.\n            msg.sender.transfer(pot - FEE_AMOUNT)"
+  ], 
+  "integer_overflow": [], 
+  "parity_multisig_bug_2": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./prng/EtherLotto.sol:37:13: Warning: Transaction-Ordering Dependency.\n            bank.transfer(FEE_AMOUNT)"
+   ], 
+   [
+    "./prng/EtherLotto.sol:37:13: Warning: Transaction-Ordering Dependency.\n            bank.transfer(FEE_AMOUNT)", 
+    "./prng/EtherLotto.sol:40:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(pot - FEE_AMOUNT)"
+   ]
+  ], 
+  "assertion_failure": [], 
+  "dos_bug": [
+   "./prng/EtherLotto.sol:1:6: Warning: dos Vulnerability.\n"
+  ]
+ }, 
+ "evm_code_coverage": "99.3"
+}

@@ -1,0 +1,13 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [
+   "./prng/LuckyDouble.sol:28:13: Warning: prng Vulnerability.\n            msg.sender.transfer(fee)"
+  ], 
+  "dos_bug": [], 
+  "integer_overflow": [], 
+  "integer_underflow": [], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "97.3"
+}

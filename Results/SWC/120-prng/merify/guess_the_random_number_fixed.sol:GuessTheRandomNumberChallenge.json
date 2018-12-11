@@ -1,0 +1,13 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [
+   "./prng/guess_the_random_number_fixed.sol:26:9: Warning: prng Vulnerability.\n        commitBlock = block.number", 
+  ],
+  "dos_bug": [], 
+  "integer_overflow": [], 
+  "integer_underflow": [], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "99.7"
+}

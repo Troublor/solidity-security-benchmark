@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [], 
+  "dos_bug": [
+   "./dos/DistributeTokens.sol:15:9: Warning: dos Vulnerability.\n        for(uint i = 0; i < investors.length; i++) {\n        ^\nSpanning multiple lines."
+  ], 
+  "integer_overflow": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./dos/DistributeTokens.sol:17:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(1 ether)"
+   ], 
+   [
+    "./dos/DistributeTokens.sol:17:13: Warning: Transaction-Ordering Dependency.\n            msg.sender.transfer(1 ether)"
+   ]
+  ]
+ }, 
+ "evm_code_coverage": "99.7"
+}

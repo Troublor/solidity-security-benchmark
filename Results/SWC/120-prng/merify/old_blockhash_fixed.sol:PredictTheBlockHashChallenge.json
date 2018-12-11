@@ -1,0 +1,14 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [
+   "./prng/old_blockhash_fixed.sol:23:9: Warning: prng Vulnerability.\n        guesses[msg.sender].block  = block.number + 1", 
+   "./prng/old_blockhash_fixed.sol:33:11: Warning: prng Vulnerability.\n          guesses[msg.sender].block = 0"
+  ], 
+  "dos_bug": [], 
+  "integer_overflow": [], 
+  "integer_underflow": [], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "99.8"
+}

@@ -1,0 +1,13 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [
+   "./dos/Auction_fixed.sol:8:14: Warning: Re-Entrancy Vulnerability.\n\t    require(msg.sender.call.value(10)()"
+  ], 
+  "prng_bug": [], 
+  "dos_bug": [], 
+  "integer_overflow": [], 
+  "integer_underflow": [], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "99.5"
+}

@@ -1,0 +1,23 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [
+   "./prng/Lottery.sol:34:17: Warning: prng Vulnerability.\n            if(!msg.sender.send(msg.value)", 
+   "./prng/Lottery.sol:30:9: Warning: prng Vulnerability.\n        bets.push(Bet(msg.value, block.number, won))"
+  ], 
+  "dos_bug": [
+   "./prng/Lottery.sol:45:9: Warning: dos Vulnerability.\n        for (uint i = 0; i < bets.length; i++) {\n        ^\nSpanning multiple lines."
+  ], 
+  "integer_overflow": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "./prng/Lottery.sol:34:17: Warning: Transaction-Ordering Dependency.\n            if(!msg.sender.send(msg.value)"
+   ], 
+   [
+    "./prng/Lottery.sol:54:9: Warning: Transaction-Ordering Dependency.\n        suicide(organizer)"
+   ]
+  ]
+ }, 
+ "evm_code_coverage": "98.5"
+}
