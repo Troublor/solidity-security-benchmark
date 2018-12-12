@@ -1,0 +1,13 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [
+   "/home/ke/SWC-registry/test_cases/reentracy/simple_dao_fixed.sol:18:15: Warning: Re-Entrancy Vulnerability.\n      require(msg.sender.call.value(amount)()"
+  ], 
+  "prng_bug": [], 
+  "dos_bug": [], 
+  "integer_overflow": [], 
+  "integer_underflow": [], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "99.7"
+}

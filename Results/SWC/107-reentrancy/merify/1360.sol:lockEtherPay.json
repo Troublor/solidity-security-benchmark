@@ -1,0 +1,25 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [
+   "/home/ke/me_test/test_evm/Reentrancy/1360.sol:109:5: Warning: prng Vulnerability.\n    isReleased = true", 
+   "/home/ke/me_test/test_evm/Reentrancy/1360.sol:86:12: Warning: prng Vulnerability.\n    return token_reward.balanceOf(this)", 
+   "/home/ke/me_test/test_evm/Reentrancy/1360.sol:107:5: Warning: prng Vulnerability.\n    token_reward.transfer( beneficiary, token_amount)"
+  ], 
+  "dos_bug": [], 
+  "integer_overflow": [
+   "/home/ke/me_test/test_evm/Reentrancy/1360.sol:107:5: Warning: IntegerOverflow Vulnerability.\n    token_reward.transfer( beneficiary, token_amount)"
+  ], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "/home/ke/me_test/test_evm/Reentrancy/1360.sol:86:12: Warning: Transaction-Ordering Dependency.\n    return token_reward.balanceOf(this)"
+   ], 
+   [
+    "/home/ke/me_test/test_evm/Reentrancy/1360.sol:86:12: Warning: Transaction-Ordering Dependency.\n    return token_reward.balanceOf(this)", 
+    "/home/ke/me_test/test_evm/Reentrancy/1360.sol:107:5: Warning: Transaction-Ordering Dependency.\n    token_reward.transfer( beneficiary, token_amount)"
+   ]
+  ]
+ }, 
+ "evm_code_coverage": "89.7"
+}

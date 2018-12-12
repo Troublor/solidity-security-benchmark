@@ -1,0 +1,13 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [], 
+  "dos_bug": [], 
+  "integer_overflow": [], 
+  "integer_underflow": [
+   "/home/ke/SWC-registry/test_cases/integer_overflow_and_underflow/integer_overflow_multitx_multifunc_feasible.sol:24:9: Warning: IntegerUnderflow Vulnerability.\n        count -= input"
+  ], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "99.4"
+}

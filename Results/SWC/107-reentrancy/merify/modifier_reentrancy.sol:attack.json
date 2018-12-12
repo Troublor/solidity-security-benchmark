@@ -1,0 +1,20 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [
+   "/home/ke/SWC-registry/test_cases/reentracy/modifier_reentrancy.sol:40:9: Warning: Re-Entrancy Vulnerability.\n        ModifierEntrancy(token).airDrop()"
+  ], 
+  "prng_bug": [], 
+  "dos_bug": [], 
+  "integer_overflow": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [
+   [
+    "/home/ke/SWC-registry/test_cases/reentracy/modifier_reentrancy.sol:35:13: Warning: Transaction-Ordering Dependency.\n            ModifierEntrancy(msg.sender).airDrop()"
+   ], 
+   [
+    "/home/ke/SWC-registry/test_cases/reentracy/modifier_reentrancy.sol:40:9: Warning: Transaction-Ordering Dependency.\n        ModifierEntrancy(token).airDrop()"
+   ]
+  ]
+ }, 
+ "evm_code_coverage": "90.3"
+}

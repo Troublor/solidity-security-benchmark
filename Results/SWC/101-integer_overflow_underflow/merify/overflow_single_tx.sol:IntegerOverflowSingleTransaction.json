@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [], 
+  "dos_bug": [], 
+  "integer_overflow": [
+   "/home/ke/SWC-registry/test_cases/integer_overflow_and_underflow/overflow_single_tx.sol:36:20: Warning: IntegerOverflow Vulnerability.\n        uint res = count * input", 
+   "/home/ke/SWC-registry/test_cases/integer_overflow_and_underflow/overflow_single_tx.sol:16:9: Warning: IntegerOverflow Vulnerability.\n        count += input", 
+   "/home/ke/SWC-registry/test_cases/integer_overflow_and_underflow/overflow_single_tx.sol:31:20: Warning: IntegerOverflow Vulnerability.\n        uint res = count + input", 
+   "/home/ke/SWC-registry/test_cases/integer_overflow_and_underflow/overflow_single_tx.sol:21:9: Warning: IntegerOverflow Vulnerability.\n        count *= input"
+  ], 
+  "integer_underflow": [
+   "/home/ke/SWC-registry/test_cases/integer_overflow_and_underflow/overflow_single_tx.sol:41:20: Warning: IntegerUnderflow Vulnerability.\n       \tuint res = count - input", 
+   "/home/ke/SWC-registry/test_cases/integer_overflow_and_underflow/overflow_single_tx.sol:26:9: Warning: IntegerUnderflow Vulnerability.\n        count -= input"
+  ], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "99.7"
+}

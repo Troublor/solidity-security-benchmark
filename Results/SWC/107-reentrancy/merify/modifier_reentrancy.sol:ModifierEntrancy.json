@@ -1,0 +1,13 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [
+   "/home/ke/SWC-registry/test_cases/reentracy/modifier_reentrancy.sol:14:56: Warning: Re-Entrancy Vulnerability.\n    require(keccak256(abi.encodePacked(\"Nu Token\")) == Bank(msg.sender).supportsToken()"
+  ], 
+  "prng_bug": [], 
+  "dos_bug": [], 
+  "integer_overflow": [], 
+  "integer_underflow": [], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "92.5"
+}

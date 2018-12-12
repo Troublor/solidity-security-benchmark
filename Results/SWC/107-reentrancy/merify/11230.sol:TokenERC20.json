@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [
+   "/home/ke/me_test/test_evm/Reentrancy/11230.sol:267:13: Warning: Re-Entrancy Vulnerability.\n            spender.receiveApproval(msg.sender, _value, this, _extraData)"
+  ], 
+  "prng_bug": [], 
+  "dos_bug": [], 
+  "integer_overflow": [
+   "/home/ke/me_test/test_evm/Reentrancy/11230.sol:3:25: Warning: IntegerOverflow Vulnerability.\npragma solidity ^0.4.16;\r\n^\nSpanning multiple lines."
+  ], 
+  "integer_underflow": [
+   "/home/ke/me_test/test_evm/Reentrancy/11230.sol:297:9: Warning: IntegerUnderflow Vulnerability.\n        totalSupply -= _value", 
+   "/home/ke/me_test/test_evm/Reentrancy/11230.sol:333:9: Warning: IntegerUnderflow Vulnerability.\n        totalSupply -= _value", 
+   "/home/ke/me_test/test_evm/Reentrancy/11230.sol:267:13: Warning: IntegerUnderflow Vulnerability.\n            spender.receiveApproval(msg.sender, _value, this, _extraData)"
+  ], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "98.3"
+}

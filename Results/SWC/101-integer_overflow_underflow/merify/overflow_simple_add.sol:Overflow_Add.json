@@ -1,0 +1,13 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [], 
+  "dos_bug": [], 
+  "integer_overflow": [
+   "/home/ke/SWC-registry/test_cases/integer_overflow_and_underflow/overflow_simple_add.sol:7:9: Warning: IntegerOverflow Vulnerability.\n        balance += deposit"
+  ], 
+  "integer_underflow": [], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "99.2"
+}

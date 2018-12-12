@@ -1,0 +1,14 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [], 
+  "dos_bug": [], 
+  "integer_overflow": [
+   "/home/ke/me_test/test_evm/Reentrancy/11458.sol:80:13: Warning: IntegerOverflow Vulnerability.\n            balances[_to] += _value", 
+   "/home/ke/me_test/test_evm/Reentrancy/11458.sol:70:13: Warning: IntegerOverflow Vulnerability.\n            balances[_to] += _value"
+  ], 
+  "integer_underflow": [], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "99.9"
+}

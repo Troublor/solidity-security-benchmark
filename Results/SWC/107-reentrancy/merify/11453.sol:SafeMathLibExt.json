@@ -1,0 +1,13 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [], 
+  "dos_bug": [], 
+  "integer_overflow": [
+   "/home/ke/me_test/test_evm/Reentrancy/11453.sol:116:14: Warning: IntegerOverflow Vulnerability.\n    uint c = a + b"
+  ], 
+  "integer_underflow": [], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "69.4"
+}

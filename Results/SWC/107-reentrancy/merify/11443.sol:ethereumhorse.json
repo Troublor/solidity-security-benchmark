@@ -1,0 +1,24 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [
+   "/home/ke/me_test/test_evm/Reentrancy/11443.sol:206:9: Warning: Re-Entrancy Vulnerability.\n        ApproveAndCallFallBack(spender).receiveApproval(msg.sender, tokens, this, data)"
+  ], 
+  "prng_bug": [], 
+  "dos_bug": [], 
+  "integer_overflow": [
+   "/home/ke/me_test/test_evm/Reentrancy/11443.sol:223:16: Warning: IntegerOverflow Vulnerability.\n        return ERC20Interface(tokenAddress).transfer(owner, tokens)"
+  ], 
+  "integer_underflow": [
+   "/home/ke/me_test/test_evm/Reentrancy/11443.sol:205:9: Warning: IntegerUnderflow Vulnerability.\n        Approval(msg.sender, spender, tokens)"
+  ], 
+  "money_concurrency": [
+   [
+    "/home/ke/me_test/test_evm/Reentrancy/11443.sol:206:9: Warning: Transaction-Ordering Dependency.\n        ApproveAndCallFallBack(spender).receiveApproval(msg.sender, tokens, this, data)"
+   ], 
+   [
+    "/home/ke/me_test/test_evm/Reentrancy/11443.sol:223:16: Warning: Transaction-Ordering Dependency.\n        return ERC20Interface(tokenAddress).transfer(owner, tokens)"
+   ]
+  ]
+ }, 
+ "evm_code_coverage": "93.4"
+}
