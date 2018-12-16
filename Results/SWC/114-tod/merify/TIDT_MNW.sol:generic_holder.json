@@ -1,0 +1,22 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [], 
+  "assertion_failure": [], 
+  "tod_bug": [], 
+  "dos_bug": [], 
+  "integer_overflow": [
+   "../../tod/TIDT_MNW.sol:25:5: Warning: IntegerOverflow Vulnerability.\n    function execute(uint _value, bytes _data) external onlyowner returns (bool){\r\n    ^\nSpanning multiple lines.", 
+   "../../tod/TIDT_MNW.sol:26:16: Warning: IntegerOverflow Vulnerability.\n        return target.call.value(_value)(_data)"
+  ], 
+  "integer_underflow": [
+   "../../tod/TIDT_MNW.sol:26:16: Warning: IntegerUnderflow Vulnerability.\n        return target.call.value(_value)(_data)"
+  ], 
+  "money_concurrency": [], 
+  "tod": [
+   "../../tod/TIDT_MNW.sol:8:13: Warning: Transaction-Ordering Dependency.\n        if (owner", 
+   "../../tod/TIDT_MNW.sol:22:9: Warning: Transaction-Ordering Dependency.\n        owner = new_owner"
+  ]
+ }, 
+ "evm_code_coverage": "99.7"
+}

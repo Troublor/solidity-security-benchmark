@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [
+   "../../tod/TDT_MNW.sol:21:5: Warning: Re-Entrancy Vulnerability.\n    target.call.value(1)()"
+  ], 
+  "prng_bug": [], 
+  "assertion_failure": [], 
+  "tod_bug": [], 
+  "dos_bug": [], 
+  "integer_overflow": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "tod": [
+   "../../tod/TDT_MNW.sol:9:23: Warning: Transaction-Ordering Dependency.\n    if (msg.sender == owner", 
+   "../../tod/TDT_MNW.sol:17:5: Warning: Transaction-Ordering Dependency.\n    owner = myowner"
+  ]
+ }, 
+ "evm_code_coverage": "99.7"
+}
