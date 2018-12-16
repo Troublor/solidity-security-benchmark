@@ -1,0 +1,14 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [
+   "../../dos/TrickyWallet_fixed.sol:22:9: Warning: prng Vulnerability.\n        timeLastWithdrawn = now"
+  ], 
+  "tod_bug": [], 
+  "dos_bug": [], 
+  "integer_overflow": [], 
+  "integer_underflow": [], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "99.5"
+}

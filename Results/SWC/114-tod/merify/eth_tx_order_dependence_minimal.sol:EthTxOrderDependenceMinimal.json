@@ -1,0 +1,14 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [], 
+  "tod_bug": [], 
+  "dos_bug": [
+   "../../tod/eth_tx_order_dependence_minimal.sol:2:3: Warning: dos Vulnerability.\n * @"
+  ], 
+  "integer_overflow": [], 
+  "integer_underflow": [], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "99.8"
+}

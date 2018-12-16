@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [
+   "../../prng/old_blockhash_simple_fixed.sol:21:9: Warning: prng Vulnerability.\n        commitblock  = block.number + 1"
+  ], 
+  "assertion_failure": [], 
+  "tod_bug": [], 
+  "dos_bug": [], 
+  "integer_overflow": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "tod": []
+ }, 
+ "evm_code_coverage": "99.5"
+}

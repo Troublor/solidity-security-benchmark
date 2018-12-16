@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [], 
+  "assertion_failure": [
+   "../../assert/token-with-backdoor.sol:28:7: Warning: Assertion Failure.\n      assert(balances[msg.sender] <= 1000)"
+  ], 
+  "tod_bug": [], 
+  "dos_bug": [], 
+  "integer_overflow": [], 
+  "integer_underflow": [], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "99.7"
+}

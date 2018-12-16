@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [], 
+  "assertion_failure": [], 
+  "tod_bug": [], 
+  "dos_bug": [], 
+  "integer_overflow": [], 
+  "integer_underflow": [], 
+  "money_concurrency": [], 
+  "tod": [
+   "../../tod/Buy_fixed_2.sol:35:5: Warning: Transaction-Ordering Dependency.\n    price = _price", 
+   "../../tod/Buy_fixed_2.sol:36:5: Warning: Transaction-Ordering Dependency.\n    txCounter += 1", 
+   "../../tod/Buy_fixed_2.sol:29:13: Warning: Transaction-Ordering Dependency.\n    require(_txCounter", 
+   "../../tod/Buy_fixed_2.sol:30:5: Warning: Transaction-Ordering Dependency.\n    msg.sender.transfer(price)"
+  ]
+ }, 
+ "evm_code_coverage": "99.7"
+}

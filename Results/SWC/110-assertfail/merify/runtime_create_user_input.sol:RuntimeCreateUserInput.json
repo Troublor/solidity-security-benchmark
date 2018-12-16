@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [], 
+  "assertion_failure": [
+   "../../assert/runtime_create_user_input.sol:11:9: Warning: Assertion Failure.\n        assert(b.foo() == 10)"
+  ], 
+  "tod_bug": [], 
+  "dos_bug": [], 
+  "integer_overflow": [
+   "../../assert/runtime_create_user_input.sol:11:16: Warning: IntegerOverflow Vulnerability.\n        assert(b.foo()"
+  ], 
+  "integer_underflow": [], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "56.1"
+}

@@ -1,0 +1,14 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [
+   "../../reentrancy/WithdrawBonus.sol:9:15: Warning: Re-Entrancy Vulnerability.\n        if (!(recipient.call.value(amountToWithdraw)()"
+  ], 
+  "prng_bug": [], 
+  "tod_bug": [], 
+  "dos_bug": [], 
+  "integer_overflow": [], 
+  "integer_underflow": [], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "99.7"
+}

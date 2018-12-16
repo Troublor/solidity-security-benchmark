@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [
+   "../../prng/LotteryStorage2.sol:102:9: Warning: prng Vulnerability.\n        blockNumber = block.number", 
+   "../../prng/LotteryStorage2.sol:109:9: Warning: prng Vulnerability.\n        winningAddress.transfer(prize)"
+  ], 
+  "tod_bug": [], 
+  "dos_bug": [
+   "../../prng/LotteryStorage2.sol:56:5: Warning: dos Vulnerability.\n    function buyTickets() payable public {\n    ^\nSpanning multiple lines.", 
+   "../../prng/LotteryStorage2.sol:1:6: Warning: dos Vulnerability.\n"
+  ], 
+  "integer_overflow": [], 
+  "integer_underflow": [], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "90.8"
+}

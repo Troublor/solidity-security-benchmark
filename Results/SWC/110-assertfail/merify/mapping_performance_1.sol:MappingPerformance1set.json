@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [], 
+  "assertion_failure": [
+   "../../assert/mapping_performance_1.sol:36:23: Warning: Assertion Failure.\n                      assert(m5[a] == 0)\nAssertion Failure occurs if:\n    cond0 = 0"
+  ], 
+  "tod_bug": [], 
+  "dos_bug": [
+   "../../assert/mapping_performance_1.sol:2:3: Warning: dos Vulnerability.\n * @"
+  ], 
+  "integer_overflow": [], 
+  "integer_underflow": [], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "99.7"
+}

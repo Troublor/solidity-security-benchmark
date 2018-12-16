@@ -1,0 +1,14 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [
+   "../../prng/LotteryValue.sol:29:9: Warning: prng Vulnerability.\n        bets[0]=Bet(msg.value, won)"
+  ], 
+  "tod_bug": [], 
+  "dos_bug": [], 
+  "integer_overflow": [], 
+  "integer_underflow": [], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "98.8"
+}

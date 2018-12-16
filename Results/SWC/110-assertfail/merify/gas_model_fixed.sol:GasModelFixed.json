@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [], 
+  "assertion_failure": [
+   "../../assert/gas_model_fixed.sol:13:9: Warning: Assertion Failure.\n        assert(b < a)"
+  ], 
+  "tod_bug": [], 
+  "dos_bug": [], 
+  "integer_overflow": [], 
+  "integer_underflow": [], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "98.6"
+}

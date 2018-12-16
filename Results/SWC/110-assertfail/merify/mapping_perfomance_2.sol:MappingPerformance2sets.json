@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [], 
+  "assertion_failure": [
+   "../../assert/mapping_perfomance_2.sol:38:23: Warning: Assertion Failure.\n                      assert(m5[a] == 0)\nAssertion Failure occurs if:\n    cond1 = 549755813888\n    cond0 = 2658455991569831745807614120560689154"
+  ], 
+  "tod_bug": [], 
+  "dos_bug": [
+   "../../assert/mapping_perfomance_2.sol:2:3: Warning: dos Vulnerability.\n * @"
+  ], 
+  "integer_overflow": [], 
+  "integer_underflow": [], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "99.2"
+}

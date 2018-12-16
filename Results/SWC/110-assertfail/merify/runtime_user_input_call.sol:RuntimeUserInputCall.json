@@ -1,0 +1,19 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [
+   "../../assert/runtime_user_input_call.sol:10:16: Warning: Re-Entrancy Vulnerability.\n        assert(B(b).foo()"
+  ], 
+  "prng_bug": [], 
+  "assertion_failure": [
+   "../../assert/runtime_user_input_call.sol:10:9: Warning: Assertion Failure.\n        assert(B(b).foo() == 10)"
+  ], 
+  "tod_bug": [], 
+  "dos_bug": [], 
+  "integer_overflow": [
+   "../../assert/runtime_user_input_call.sol:10:16: Warning: IntegerOverflow Vulnerability.\n        assert(B(b).foo()"
+  ], 
+  "integer_underflow": [], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "91.8"
+}

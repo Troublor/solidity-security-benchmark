@@ -1,0 +1,15 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [], 
+  "assertion_failure": [], 
+  "tod_bug": [], 
+  "dos_bug": [
+   "../../assert/sha_of_sha_2_mappings.sol:2:3: Warning: dos Vulnerability.\n * @"
+  ], 
+  "integer_overflow": [], 
+  "integer_underflow": [], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "68.9"
+}

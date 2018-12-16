@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [
+   "../../reentrancy/EtherStore.sol:17:17: Warning: Re-Entrancy Vulnerability.\n        require(msg.sender.call.value(_weiToWithdraw)()"
+  ], 
+  "prng_bug": [
+   "../../reentrancy/EtherStore.sol:18:9: Warning: prng Vulnerability.\n        balances[msg.sender] -= _weiToWithdraw", 
+   "../../reentrancy/EtherStore.sol:19:9: Warning: prng Vulnerability.\n        lastWithdrawTime[msg.sender] = now", 
+   "../../reentrancy/EtherStore.sol:17:17: Warning: prng Vulnerability.\n        require(msg.sender.call.value(_weiToWithdraw)()"
+  ], 
+  "tod_bug": [], 
+  "dos_bug": [], 
+  "integer_overflow": [], 
+  "integer_underflow": [], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "99.8"
+}

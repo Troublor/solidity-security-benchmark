@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [
+   "../../over-under-flows/LockTime_fixed.sol:21:9: Warning: prng Vulnerability.\n        msg.sender.transfer(transferValue)", 
+   "../../over-under-flows/LockTime_fixed.sol:20:9: Warning: prng Vulnerability.\n        balances[msg.sender] = 0", 
+   "../../over-under-flows/LockTime_fixed.sol:8:9: Warning: prng Vulnerability.\n        lockTime[msg.sender] = now + 1 weeks"
+  ], 
+  "tod_bug": [], 
+  "dos_bug": [], 
+  "integer_overflow": [], 
+  "integer_underflow": [], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "99.8"
+}

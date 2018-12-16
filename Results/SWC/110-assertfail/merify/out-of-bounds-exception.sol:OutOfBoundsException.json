@@ -1,0 +1,16 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [], 
+  "assertion_failure": [], 
+  "tod_bug": [], 
+  "dos_bug": [], 
+  "integer_overflow": [
+   "../../assert/out-of-bounds-exception.sol:8:10: Warning: IntegerOverflow Vulnerability.\n\t\treturn array[idx]", 
+   "../../assert/out-of-bounds-exception.sol:5:2: Warning: IntegerOverflow Vulnerability.\n\tuint256[] public array"
+  ], 
+  "integer_underflow": [], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "99.5"
+}

@@ -1,0 +1,18 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [
+   "../../reentrancy/EtherStore_fixed.sol:27:9: Warning: prng Vulnerability.\n        reEntrancyMutex = false", 
+   "../../reentrancy/EtherStore_fixed.sol:21:9: Warning: prng Vulnerability.\n        balances[msg.sender] -= _weiToWithdraw", 
+   "../../reentrancy/EtherStore_fixed.sol:25:9: Warning: prng Vulnerability.\n        msg.sender.transfer(_weiToWithdraw)", 
+   "../../reentrancy/EtherStore_fixed.sol:22:9: Warning: prng Vulnerability.\n        lastWithdrawTime[msg.sender] = now", 
+   "../../reentrancy/EtherStore_fixed.sol:24:9: Warning: prng Vulnerability.\n        reEntrancyMutex = true"
+  ], 
+  "tod_bug": [], 
+  "dos_bug": [], 
+  "integer_overflow": [], 
+  "integer_underflow": [], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "99.8"
+}

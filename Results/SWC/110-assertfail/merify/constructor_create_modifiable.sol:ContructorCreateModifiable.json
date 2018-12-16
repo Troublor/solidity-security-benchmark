@@ -1,0 +1,17 @@
+{
+ "vulnerabilities": {
+  "reentrancy": [], 
+  "prng_bug": [], 
+  "assertion_failure": [
+   "../../assert/constructor_create_modifiable.sol:15:9: Warning: Assertion Failure.\n        assert(b.foo() == 10)"
+  ], 
+  "tod_bug": [], 
+  "dos_bug": [], 
+  "integer_overflow": [
+   "../../assert/constructor_create_modifiable.sol:15:16: Warning: IntegerOverflow Vulnerability.\n        assert(b.foo()"
+  ], 
+  "integer_underflow": [], 
+  "money_concurrency": []
+ }, 
+ "evm_code_coverage": "91.7"
+}
